@@ -5,22 +5,24 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>To Do List</title>
     <link rel="stylesheet" href="./style.css">
+
 </head>
 <body>
     <section class="container">
         <div class="to-do-list">
-            <h2>To-Do list</h2>
+            <h2>To-Do List</h2>
                  <img src="./images/icon.png" alt="">
         </div>
         <div class="row">
-            <input type="text" placeholder="Add your Task" class="to-do">
-            <button>Add Task</button>
+            <input type="text" placeholder="Add your Task" id="input-box">
+            <button onclick="addTask()">Add Task</button>
         </div>
-        <ul>
-            <li>Task-1</li>
+        <ul id="list-container">
+            <!-- <li class="checked">Task-1</li>
             <li>Task-2</li>
-            <li>Task-3</li>
+            <li>Task-3</li> -->
         </ul>
     </section>
+    <script src="./script.js"></script>
 </body>
 </html>
